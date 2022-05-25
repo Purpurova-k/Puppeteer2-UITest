@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "cucumber": "cucumber-js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   "author": "Kate Purpurova",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^8.2.1",
+    "chai": "^4.3.6",
     "jest": "^28.1.0",
     "jest-puppeteer": "^6.1.0",
     "puppeteer": "^14.1.0"
