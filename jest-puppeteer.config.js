@@ -1,7 +1,8 @@
 module.exports = {
-    launch: {
-      headless: false,
-      defaultViewport: null,
-      args: ["--start-maximized"],
-    },
-  };
+  launch: {
+    // slowMo: 300,
+    // headless: false,
+    defaultViewport: null,
+    args: ["--start-maximized"],
+  },
+};
