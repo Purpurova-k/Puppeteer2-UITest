@@ -4,16 +4,14 @@ let page;
 
 beforeEach(async () => {
   page = await browser.newPage();
-});
+  await page.goto("http://qamid.tmweb.ru/client/index.php");
+  }, 40000);
 
 afterEach(() => {
   page.close();
 });
 
 describe("GoToCinema page tests", () => {
-  beforeEach(async () => {
-    await page.goto("http://qamid.tmweb.ru/client/index.php");
-  }, 40000);
 
   test("Book one movie ticket", async () => {
     await clickElement(page, "nav > .page-nav__day:nth-child(7)");
